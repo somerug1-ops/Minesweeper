@@ -3,9 +3,9 @@
 A simple Minesweeper Discord bot built with `discord.py`. Plays directly in chat using interactive button grids or spoiler text tags.
 
 ## Features
-- **Interactive Grid**: Play 5x5 Minesweeper using Discord button components.
-- **Reveal & Flag Modes**: Switch between revealing tiles and flagging suspected mines.
-- **Spoiler Boards**: Generate spoiler-tagged text boards (`/spoilers`) for instant chat games without interactive buttons.
+- **Interactive Grid**: Minesweeper with the discord buttons
+- **Reveal & Flag Modes**: Switch between flagging tiles and revealing tiles!
+- **Spoiler Boards**: /spoilers if you're stuck.
 - **Leaderboards & Stats**: Tracks wins, win rates, and total mines cleared saved locally in JSON.
 
 ## Quickstart
