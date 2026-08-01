@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Python cache / bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Game stats data (optional)
+# stats.json

@@ -1,0 +1,12 @@
+{
+  "782319336357625856": {
+    "games_played": 6,
+    "wins": 3,
+    "losses": 3,
+    "mines_cleared": 10,
+    "best_times": {
+      "easy": 1,
+      "medium": 38
+    }
+  }
+}
