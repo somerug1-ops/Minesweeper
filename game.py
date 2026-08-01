@@ -38,7 +38,7 @@ class Minefield:
             self.grid[r][c].is_mine = True
             placed += 1
 
-        # Calculate numbers for adjacent mines
+        # calculations
         for r in range(self.rows):
             for c in range(self.cols):
                 if not self.grid[r][c].is_mine:
@@ -66,7 +66,7 @@ class Minefield:
         if target.is_revealed or target.is_flagged:
             return "NOOP"
 
-        # Generate board after first click so player never hits a mine on turn 1
+        # make sure first click isnt a mine
         if not self.initialized:
             self.setup_mines(r, c)
 
@@ -82,7 +82,7 @@ class Minefield:
                         cell.is_revealed = True
             return "MINE"
 
-        # Auto-reveal adjacent empty tiles
+        # auto reveal
         stack = [(r, c)]
         visited = set()
 
@@ -115,7 +115,7 @@ class Minefield:
             self.game_over = True
             self.won = True
             self.end_time = time.time()
-            # Flag remaining mines on win
+            # flag remaining mines on win
             for row in self.grid:
                 for cell in row:
                     if cell.is_mine:
